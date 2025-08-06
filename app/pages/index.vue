@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen bg-[#022629] text-white px-8 md:px-20 pt-10 pb-0 relative bg-cover bg-no-repeat bg-left-top bg-[url(/images/bg-vector.png)]"
+    <div class="min-h-screen bg-[#022629] text-white px-8 md:px-20 pt-10 pb-0 relative bg-cover bg-no-repeat md:bg-left-top bg-[url(/images/bg-vector.png)]"
         style="background-size: 50% 50%; background-position: top left;">
         <div class="absolute inset-0 bg-[#022629] bg-opacity-70"></div>
         <div class="z-10 relative">
@@ -9,7 +9,7 @@
                 <div class="text-center items-center">
                     <div class="flex items-center justify-center">
                         <!-- <img src="~/assets/images/Tap. Flip. Own Crypto..png" alt="tap-flip" class="w-[70%]"> -->
-                         <p class="font-covered_by_your_grace font-normal text-[128px] text-[#ffffff]">Tap. Flip. Own Crypto.</p>
+                         <p class="font-covered_by_your_grace font-normal text-[40px] md:text-[128px] text-[#ffffff]">Tap. Flip. Own Crypto.</p>
                     </div>
                     <div class="text-[18px] text-[#ffffff] font-light mt-4 mb-10">
                         <p>The easiest way to trade and earn.</p>
