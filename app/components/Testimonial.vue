@@ -109,7 +109,8 @@ const testimonials: Testimonial[] = [
       'FlipCoin is perfect for crypto newbies like me. No complex setup, just tap, flip, and earn.',
     name: 'Aliyah T',
     location: 'Cape Town, South Africa',
-    avatar: 'https://i.pravatar.cc/48?img=2'
+    // avatar: 'https://i.pravatar.cc/48?img=2'
+    avatar: '/images/avatar-girl.png'
   },
   {
     title: '“Fun Way to Learn and Earn”',
@@ -117,7 +118,9 @@ const testimonials: Testimonial[] = [
       'I referred some friends and got rewarded instantly. The referral program really works!',
     name: 'Anab K.',
     location: 'Lagos, Nigeria',
-    avatar: 'https://i.pravatar.cc/48?img=3'
+    // avatar: 'https://i.pravatar.cc/48?img=3'
+    avatar: '/images/avatar-boy.png'
+
   }
 ]
 
