@@ -1,26 +1,26 @@
 <template>
   <div class="w-full mt-10">
     <div
-      class="bg-[#dedede] flex gap-20 px-8 py-12 rounded-lg transition-all duration-500 ease-in-out"
+      class="bg-[#dedede] flex flex-wrap md:flex-nowrap gap-8 md:gap-20 px-2 md:px-8 py-12 rounded-lg transition-all duration-500 ease-in-out"
       key="carousel"
     >
-      <div class="w-[50%]">
+      <div class="md:w-[50%]">
         <img :src="currentStep?.image" :alt="`Step ${currentStepIndex + 1}`" class="w-[100%]" />
       </div>
-      <div class="text-left p-4 w-[50%]">
-        <!-- {{ currentStep.title }} -->
+      <div class="text-left p-4 md:w-[50%]">
+        <p class="font-covered_by_your_grace font-normal text-[40px] text-[#191919]">{{ currentStep?.title }}</p>
 
-        <img :src="currentStep?.title" :alt="`STEP ${currentStepIndex + 1}`" class="w-[20%]" />
+        <!-- <img :src="currentStep?.title" :alt="`STEP ${currentStepIndex + 1}`" class="w-[20%]" /> -->
 
-        <div class="py-4">
-            <p class="font-bold">{{ currentStep?.heading }}</p>
-            <p class="text-[14px]">{{ currentStep?.subheading }}</p>
+        <div class="py-4 text-[14px] text-[#191919]">
+            <p class="font-bold font-craftwork">{{ currentStep?.heading }}</p>
+            <p class="font-normal font-instrument">{{ currentStep?.subheading }}</p>
         </div>
 
-        <ul class="text-[14px] space-y-6">
+        <ul class="text-[14px] space-y-6 font-instrument text-[#191919] font-normal">
             <li v-for="(item, index) in currentStep?.list" :key="index" class="flex items-start gap-2">
                 <!-- Custom bullet -->
-                <span class="w-3 h-3 bg-[#022629] rounded-full flex-shrink-0 self-center mt-0.5"></span>
+                <span class="w-2 h-2 md:w-3 md:h-3 bg-[#022629] rounded-full flex-shrink-0 self-center mt-0.5"></span>
                 <span class="leading-snug">{{ item }}</span>
             </li>
         </ul>
@@ -53,7 +53,7 @@ import { ref, computed } from 'vue'
 const steps = [
   {
     image: new URL('~/assets/images/step1.png', import.meta.url).href,
-    title: new URL('~/assets/images/STEP 1.png', import.meta.url).href,
+    title: "STEP 1",
     heading: "SIGN UP TO CREATE AN ACCOUNT",
     subheading: "This is where we get to know you-just a little",
     list: [
@@ -65,7 +65,7 @@ const steps = [
   },
   {
     image: new URL('~/assets/images/step2.png', import.meta.url).href,
-      title: new URL('~/assets/images/STEP 2.png', import.meta.url).href,
+      title: "STEP 2",
       heading: "VERIFY YOUR EMAIL ADDRESS",
       subheading: "To keep your account secure and unlock full access, please verify your email address.",
       list: [
@@ -75,8 +75,8 @@ const steps = [
     ]
   },
   {
-    image: new URL('/assets/images/step3.png', import.meta.url).href,
-      title: new URL('/assets/images/STEP 3.png', import.meta.url).href,
+    image: new URL('~/assets/images/step3.png', import.meta.url).href,
+      title: "STEP 3",
       heading: "SETUP YOUR FLIPCOIN WALLET",
       subheading: "Once you're in, your wallet is automatically created—no technical setup required.",
       list: [
@@ -87,7 +87,7 @@ const steps = [
     },
   {
     image: new URL('~/assets/images/step4.png', import.meta.url).href,
-      title: new URL('~/assets/images/STEP 4.png', import.meta.url).href,
+      title: "STEP 4",
       heading: "START FLIPPING ON FLIPCOIN",
       subheading: "Log In to Your FlipCoin Dashboard",
       list: [

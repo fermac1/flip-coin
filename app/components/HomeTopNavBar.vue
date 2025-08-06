@@ -1,13 +1,13 @@
 <template>
-    <nav class="bg-[#f3f3f3] w-full px-4 md:px-6 py-4 space-y-2 flex md:flex-nowrap flex-wrap items-center justify-between text-[#ffffff] rounded-3xl">
+    <nav class="backdrop-blur-[32.2969970703125px] backdrop-saturate-150 w-full px-4 md:px-6 py-4 space-y-2 flex md:flex-nowrap flex-wrap items-center justify-between text-[#ffffff]">
        <!-- Logo -->
         <div class="text-white font-bold text-2xl">
             <!-- <img src="~/assets/images/flipcoin_logo.png" alt="flip coin logo" class="md:w-[90%]"> -->
-            <p class="font-covered_by_your_grace font-normal text-[30px] text-[#191919]">Flipcoin</p>
+            <p class="font-covered_by_your_grace font-normal text-[30px] text-[#ffffff]">Flipcoin</p>
         </div>
 
         <!-- Navigation Tabs -->
-        <div class="flex gap-1 bg-[#ffffff] text-[#052225] rounded-lg p-1">
+        <div class="flex gap-1 bg-[#f3f3f3] text-black rounded-lg p-1">
               <NuxtLink
                 v-for="item in navItems"
                 :key="item.route"
@@ -16,7 +16,7 @@
                 :class="[
                 $route.path === item.route
                     ? 'bg-[#052225] text-[#fcfcfc]'
-                    : 'hover:bg-[#f3f4f7] text-[#052225]'
+                    : 'hover:bg-gray-200 text-black'
                 ]"
             >
                 {{ item.label }}
@@ -37,10 +37,10 @@
         </div>
 
         <!-- Get Started Button -->
-        <button class="px-5 py-2 rounded-lg border border-[#022629] text-[#191919] transition text-[14px] font-bold font-craftwork"
-        style="box-shadow: inset 0 1px 1px 0 #022629;"
-            onmouseover="this.style.boxShadow='0 4px 6px #022629'"
-            onmouseout="this.style.boxShadow='inset 0 0 1px 1px #022629'">
+        <button class="px-5 py-2 rounded-[10px] border border-[#5BC485] text-[#ffffff] transition text-[14px] font-bold font-craftwork"
+        style="box-shadow: inset 0 1px 1px 0 #5BC485;"
+            onmouseover="this.style.boxShadow='0 4px 6px #5BC485'"
+            onmouseout="this.style.boxShadow='inset 0 0 1px 1px #5BC485'">
          Get started
         </button>
     </nav>

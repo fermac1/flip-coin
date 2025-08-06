@@ -1,19 +1,23 @@
 <template>
-    <div class="min-h-screen bg-[#022629] text-white px-20 pt-10 pb-0">
-        <div class="">
-            <TopNavBar/>
+    <div class="min-h-screen bg-[#022629] text-white px-8 md:px-20 pt-10 pb-0 relative bg-cover bg-no-repeat bg-left-top bg-[url(/images/bg-vector.png)]"
+        style="background-size: 50% 50%; background-position: top left;">
+        <div class="absolute inset-0 bg-[#022629] bg-opacity-70"></div>
+        <div class="z-10 relative">
+        <!-- style="background-image: url('~/assets/images/STEP 1.png'); background-size: 50% 50%; -->
+        <HomeTopNavBar/>
             <div class="mt-[120px]">
                 <div class="text-center items-center">
                     <div class="flex items-center justify-center">
-                        <img src="~/assets/images/Tap. Flip. Own Crypto..png" alt="tap-flip" class="w-[70%]">
+                        <!-- <img src="~/assets/images/Tap. Flip. Own Crypto..png" alt="tap-flip" class="w-[70%]"> -->
+                         <p class="font-covered_by_your_grace font-normal text-[128px] text-[#ffffff]">Tap. Flip. Own Crypto.</p>
                     </div>
-                    <div class="text-[16px] text-[#ffffff] font-[400] mt-4 mb-10">
+                    <div class="text-[18px] text-[#ffffff] font-light mt-4 mb-10">
                         <p>The easiest way to trade and earn.</p>
                         <p>Start flipping your way to financial freedom, one coin at a time.</p>
                     </div>
 
                     <div class="mt-10 text-[#ffffff] text-[14px] relative">
-                        <button class="relative z-10 px-5 py-2 rounded-[10px] border border-[#5BC485] transition-all duration-300"
+                        <button class="relative z-10 px-5 py-2 rounded-[10px] border border-[#5BC485] transition-all duration-300 font-semibold text-[16px]"
                         style="box-shadow: inset 0 1px 1px 0 #5BC485;"
                           onmouseover="this.style.boxShadow='0 4px 6px #5BC485'"
                             onmouseout="this.style.boxShadow='inset 0 0 1px 1px #5BC485'">
@@ -46,12 +50,12 @@
     </div>
     
     <!-- Carousel -->
-    <div class="bg-[#ffffff] px-20 py-10 text-center" id="how-it-works">
+    <div class="bg-[#ffffff] px-10 md:px-20 py-10 text-center" id="how-it-works">
         <div class="flex items-center justify-center">
-            <p class="font-bold text-[#161616] text-[24px]">How it Works</p>
+            <p class="font-bold text-[#161616] text-[24px] font-craftwork">How it Works</p>
             <img src="~/assets/images/stacked-coins.png" alt="">
         </div>
-        <div class="text-[#000000] text-[16px] mt-2 font-[400]">
+        <div class="text-[#000000] text-[16px] mt-2 font-[400] font-instrument">
             <p>Flipcoin is a gamified, beginner-friendly crypto platform.</p>
             <p>It's secure, transparent, and perfect for quick low-stakes trading.</p>
         </div>
@@ -67,7 +71,9 @@
             <Carousel/>
         <!-- </div> -->
     </div>
-
+    
+    <!-- Testimonial -->
+     <Testimonial/>
 
     <!-- Footer -->
     <Footer/>
