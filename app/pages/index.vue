@@ -1,15 +1,14 @@
 <template>
-    <div class="min-h-screen bg-[#022629] text-white px-8 md:px-20 pt-10 pb-0 relative bg-cover bg-no-repeat md:bg-left-top bg-[url(/images/bg-vector.png)]"
+    <div class="md:min-h-screen bg-[#022629] text-white px-8 md:px-20 md:pt-10 pt-4 pb-0 relative bg-cover bg-no-repeat md:bg-left-top bg-[url(/images/bg-vector.png)]"
         style="background-size: 50% 50%; background-position: top left;">
         <div class="absolute inset-0 bg-[#022629] bg-opacity-70"></div>
         <div class="z-10 relative">
         <!-- style="background-image: url('~/assets/images/STEP 1.png'); background-size: 50% 50%; -->
         <HomeTopNavBar/>
-            <div class="mt-[120px]">
+            <div class="mt-10 md:mt-[120px] mb-0">
                 <div class="text-center items-center">
                     <div class="flex items-center justify-center">
-                        <!-- <img src="~/assets/images/Tap. Flip. Own Crypto..png" alt="tap-flip" class="w-[70%]"> -->
-                         <p class="font-covered_by_your_grace font-normal text-[40px] md:text-[128px] text-[#ffffff]">Tap. Flip. Own Crypto.</p>
+                      <p class="font-covered_by_your_grace font-normal text-[40px] md:text-[128px] text-[#ffffff]">Tap. Flip. Own Crypto.</p>
                     </div>
                     <div class="text-[18px] text-[#ffffff] font-light mt-4 mb-10">
                         <p>The easiest way to trade and earn.</p>
@@ -29,20 +28,9 @@
                     </div>
 
                     <div>
-                        <img src="~/assets/images/coins.png" alt="coins" class="w-[100%]">
+                        <img src="~/assets/images/coins.png" alt="coins" class="w-full md:w-[100%] block">
                     </div>
 
-                     <!-- <button
-                        class="relative px-6 py-2 text-white font-medium rounded-md border border-green-400
-                            backdrop-blur-md bg-white/5 shadow-md transition
-                            hover:bg-white/10 hover:shadow-green-400/50"
-                    >
-                        <span class="relative z-10">Start flipping now</span> -->
-                        <!-- Glowing border effect -->
-                        <!-- <span
-                        class="absolute inset-0 rounded-md border border-green-400 animate-pulse opacity-20 blur-md"
-                        ></span> -->
-                    <!-- </button> -->
                 </div>
             </div>
 
@@ -51,7 +39,7 @@
     
     <!-- Carousel -->
     <div class="bg-[#ffffff] px-10 md:px-20 py-10 text-center" id="how-it-works">
-        <div class="flex items-center justify-center">
+        <div class="flex md:flex-row flex-col items-center justify-center">
             <p class="font-bold text-[#161616] text-[24px] font-craftwork">How it Works</p>
             <img src="~/assets/images/stacked-coins.png" alt="">
         </div>
