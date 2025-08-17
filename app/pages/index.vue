@@ -61,7 +61,7 @@
     </div>
     
     <!-- Testimonial -->
-     <Testimonial/>
+     <Testimonial id="testimonials"/>
 
     <!-- Footer -->
     <Footer/>

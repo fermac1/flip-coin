@@ -12,14 +12,14 @@
             <!-- Column 1 -->
             <div class="space-y-2">
                 <p class="font-bold text-[16px]"><NuxtLink to="/">Home</NuxtLink></p>
-                <p class="text-[14px] font-light"><NuxtLink to="#how-it-works">How it works</NuxtLink></p>
-                <p class="text-[14px] font-light">Testimonials</p>
+                <p class="text-[14px] font-light"><NuxtLink to="/#how-it-works">How it works</NuxtLink></p>
+                <p class="text-[14px] font-light"><NuxtLink to="/#testimonials">Testimonials</NuxtLink></p>
             </div>
 
             <!-- Column 2 -->
             <div class="space-y-2">
                 <p class="font-bold text-[16px]"><NuxtLink to="/about">About</NuxtLink></p>
-                <p class="text-[14px] font-light"><NuxtLink to="#who-we-serve">Who we serve</NuxtLink></p>
+                <p class="text-[14px] font-light"><NuxtLink to="/about/#who-we-serve">Who we serve</NuxtLink></p>
             </div>
 
             <!-- Column 3 -->
