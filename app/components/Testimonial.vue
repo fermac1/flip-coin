@@ -1,88 +1,3 @@
-<!-- <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-
-const items = [
-  'https://picsum.photos/528/528?random=1',
-  'https://picsum.photos/528/528?random=2',
-  'https://picsum.photos/528/528?random=3',
-  'https://picsum.photos/528/528?random=4',
-  'https://picsum.photos/528/528?random=5',
-  'https://picsum.photos/528/528?random=6'
-]
-
-const cardRefs = ref<HTMLElement[]>([])
-const activeIndex = ref<number>(0)
-
-const scrollToCard = (index: number) => {
-  const card = cardRefs.value[index]
-  if (card) {
-    card.scrollIntoView({ behavior: 'smooth', inline: 'center' })
-  }
-}
-
-const isActive = (index: number) => activeIndex.value === index
-
-onMounted(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        const index = cardRefs.value.findIndex((el) => el === entry.target)
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.8) {
-          activeIndex.value = index
-        }
-      })
-    },
-    {
-      root: document.querySelector('#carousel'),
-      threshold: 0.8
-    }
-  )
-
-  cardRefs.value.forEach((el) => {
-    if (el) observer.observe(el)
-  })
-
-  scrollToCard(0)
-})
-</script>
-
-<template>
-  <div class="w-full overflow-hidden py-10">
-    <div
-      id="carousel"
-      class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth px-8"
-    >
-      <div
-        v-for="(item, index) in items"
-        :key="index"
-        :ref="el => cardRefs[index] = el"
-        @click="scrollToCard(index)"
-        class="snap-center flex-shrink-0 transition-all duration-300 cursor-pointer w-[70%] max-w-[528px]"
-        :class="isActive(index)
-          ? 'opacity-100 scale-100'
-          : 'opacity-10 scale-95'"
-      >
-        <img
-          :src="item"
-          alt="carousel image"
-          class="rounded-lg w-full h-auto object-cover"
-        />
-      </div>
-    </div>
-  </div>
-</template>
-
-<style scoped>
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-</style> -->
-
-
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 
@@ -98,7 +13,7 @@ const testimonials: Testimonial[] = [
   {
     title: '“Crypto, Finally Made Simple”',
     content:
-      "I’ve tried a few crypto apps, but FlipCoin is by far the most beginner-friendly. I started flipping and earning within minutes!",
+      "I've tried a few crypto apps, but FlipCoin is by far the most beginner-friendly. I started flipping and earning within minutes!",
     name: 'Matt Cannon',
     location: 'San Diego, CA',
     avatar: 'https://i.pravatar.cc/48?img=1'
@@ -156,7 +71,7 @@ onMounted(() => {
     if (el) observer.observe(el)
   })
 
-  scrollToCard(0)
+  // scrollToCard(0)
 })
 </script>
 

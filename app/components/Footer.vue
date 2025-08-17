@@ -50,9 +50,7 @@
         <!-- Footer description -->
         <div class="mt-10 mb-10 text-justify space-y-10">
             <p class="text-[14px] font-light">
-            London's first restaurant focused on well-dressed salads. We serve vibrant,
-            customizable bowls, warm soups, and citrus desserts—crafted with style,
-            flavor, and freshness in every bite.
+            FlipCoin is a simple, fun, and beginner-friendly platform designed to make crypto accessible to everyone. Whether you're just starting out or exploring new ways to trade, FlipCoin turns complex crypto transactions into an easy tap-and-flip experience. We believe crypto should be clear, secure, and engaging — so we’ve built a fast, mobile-first app that lets you trade, earn, and explore without the overwhelm. With transparent systems, a clean interface, and tools built for real people, FlipCoin makes digital currency feel as intuitive as flipping a coin.
             </p>
         </div>
     </footer>
