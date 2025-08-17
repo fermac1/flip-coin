@@ -23,7 +23,7 @@
             'md:flex md:items-center md:mt-0 md:w-auto'
         ]"
         >
-        <NuxtLink
+        <!-- <NuxtLink
             v-for="item in navItems"
             :key="item.route"
             :to="item.route"
@@ -33,6 +33,18 @@
                 ? 'bg-[#052225] text-[#fcfcfc]'
                 : 'hover:bg-[#f3f4f7] text-[#052225]'
             ]"
+        >
+            {{ item.label }}
+        </NuxtLink> -->
+
+         <NuxtLink
+            v-for="item in navItems"
+            :key="item.route"
+            :to="item.route"
+            class="px-4 py-1.5 rounded-lg text-[14px] font-normal transition-all duration-200"
+            exact-active-class="bg-[#052225] text-[#fcfcfc]" 
+            active-class="bg-[#052225] text-[#fcfcfc]"
+             @click="isMenuOpen = false"
         >
             {{ item.label }}
         </NuxtLink>

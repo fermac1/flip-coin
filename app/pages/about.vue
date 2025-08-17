@@ -5,7 +5,7 @@
             style="background-size: cover;">
             </div>
     
-            <div class="z-10 relative text-[#161616] mt-[50px] md:mt-[120px] mb-[50px] p-8" id="who-we-serve">
+            <div class="z-10 relative text-[#161616] mt-[50px] md:mt-[120px] mb-[50px] p-4 md:p-8" id="who-we-serve">
                 <div class="text-center">
                     <p class="font-craftwork md:text-[64px] font-semibold">Who we serve</p>
                     <p class="font-instrument text-[16px] md:text-[20px] font-light">FlipCoin is built for anyone looking to start or simplify their crypto journey 
@@ -19,8 +19,8 @@
                     <!-- Left side: stacked images -->
                     <div class="flex flex-col space-y-4">
                         <div class="flex space-x-4">
-                        <img src="../assets/images/about-img1.jpg" alt="User" class="shadow-md transform rotate-[12.69deg] w-1/2 overflow-hidden h-80" />
-                        <img src="../assets/images/about-img2.jpg" alt="User" class="shadow-md w-1/2 transform rotate-[12.69deg] overflow-hidden" />
+                        <img src="../assets/images/about-img1.jpg" alt="User" class="shadow-md transform rotate-[12.69deg] w-1/2 h-1/2 overflow-hidden md:h-80" />
+                        <img src="../assets/images/about-img2.jpg" alt="User" class="shadow-md w-1/2 h-1/2 transform rotate-[12.69deg] overflow-hidden" />
                         </div>
                         <img src="../assets/images/about-img3.jpg" alt="User" class="shadow-md w-full" />
                     </div>
@@ -77,7 +77,7 @@
                     <p class="font-covered_by_your_grace font-light text-[22px] md:text-[58px]">Make digital currency simple, fun, and rewarding.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#F0F1F4] p-6 font-instrument rounded-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#F0F1F4] p-4 md:p-6 font-instrument rounded-2xl">
                     <!-- Mission -->
                     <div class="bg-[#FCFCFC] p-4 rounded-2xl flex flex-col">
                         <div>

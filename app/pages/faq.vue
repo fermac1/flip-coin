@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen bg-[#ffffff] text-white px-8 md:px-20 pt-10 pb-0 relative">
+    <div class="min-h-screen bg-[#ffffff] text-white px-6 md:px-20 pt-10 pb-0 relative">
         <TopNavBar class="bg-[#f3f3f3]"/>
         <div class="absolute inset-0 top-[150px] bg-cover bg-no-repeat bg-left-top bg-[url(/images/bg-faq.png)]"
             style="background-size: cover;">
