@@ -11,9 +11,9 @@
       <!-- FAQ Question -->
       <button
         @click="toggleFaq(index)"
-        class="w-full flex justify-between items-center px-4 py-3 text-left text-gray-800 hover:bg-gray-50 transition font-instrument"
+        class="w-full flex justify-between items-center px-4 py-3 text-left text-gray-800 hover:bg-gray-50 transition font-instrument text-[22px] font-semibold"
       >
-        <span :class="openIndex === index ? 'text-[#5BC485] font-semibold text-[22px]' : 'text-[20px] font-normal'">
+        <span :class="openIndex === index ? 'text-[#5BC485]' : ''">
           {{ faq.question }}
         </span>
         <img class="w-5 h-5 transition-transform" 
@@ -35,7 +35,7 @@
       <!-- FAQ Answer -->
       <div
         v-if="openIndex === index"
-        class="px-4 pb-4 text-[19px] text-[#191919] font-light"
+        class="px-4 pb-4 text-[19px] bg-green-50 text-[#191919] font-light"
       >
         {{ faq.answer }}
       </div>

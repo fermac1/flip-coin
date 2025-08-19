@@ -81,8 +81,8 @@
                     <!-- Mission -->
                     <div class="bg-[#FCFCFC] p-4 rounded-2xl flex flex-col">
                         <div>
-                        <p class="font-bold text-[18px] md:text-[22px] text-[#022629DB]">Our Mission</p>
-                        <p class="font-light text-[16px] md:text-[18px] text-[#4A4A4A]">
+                        <p class="font-bold text-[22px] text-[#022629DB]">Our Mission</p>
+                        <p class="font-light text-[18px] text-[#4A4A4A]">
                             Our mission is to lower the barrier to crypto adoption through intuitive design, instant flipping, and a community-driven referral system. Whether you're a beginner or just want a smoother, more engaging way to earn, FlipCoin is your easiest way in.
                         </p>
                         </div>
@@ -94,8 +94,8 @@
                     <!-- Vision -->
                     <div class="bg-[#FCFCFC] p-4 rounded-2xl flex flex-col">
                         <div>
-                        <p class="font-bold text-[18px] md:text-[22px] text-[#022629DB]">Our Vision</p>
-                        <p class="font-light text-[16px] md:text-[18px] text-[#4A4A4A]">
+                        <p class="font-bold text-[22px] text-[#022629DB]">Our Vision</p>
+                        <p class="font-light text-[18px] text-[#4A4A4A]">
                             To make crypto ownership as easy and engaging as flipping a coin — empowering anyone, anywhere to join the digital economy with confidence and simplicity.
                         </p>
                         </div>
