@@ -4,7 +4,7 @@
         <div class="absolute inset-0 bg-[#022629] bg-opacity-70"></div>
         <div class="z-10 relative">
         <!-- style="background-image: url('~/assets/images/STEP 1.png'); background-size: 50% 50%; -->
-        <HomeTopNavBar/>
+        <TopNavBar/>
             <div class="mt-10 md:mt-[120px] mb-0">
                 <div class="text-center items-center">
                     <div class="flex items-center justify-center">

@@ -11,12 +11,22 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
+    title: '“Fun Way to Learn and Earn”',
+    content:
+      'I referred some friends and got rewarded instantly. The referral program really works!',
+    name: 'Anab K.',
+    location: 'Lagos, Nigeria',
+    // avatar: 'https://i.pravatar.cc/48?img=3'
+    avatar: 'https://i.pravatar.cc/48?img=1'
+
+  },
+  {
     title: '“Crypto, Finally Made Simple”',
     content:
       "I've tried a few crypto apps, but FlipCoin is by far the most beginner-friendly. I started flipping and earning within minutes!",
     name: 'Matt Cannon',
     location: 'San Diego, CA',
-    avatar: 'https://i.pravatar.cc/48?img=1'
+    avatar: '/images/avatar-boy.png'
   },
   {
     title: '“Perfect for Crypto Newbies”',
@@ -26,28 +36,48 @@ const testimonials: Testimonial[] = [
     location: 'Cape Town, South Africa',
     // avatar: 'https://i.pravatar.cc/48?img=2'
     avatar: '/images/avatar-girl.png'
-  },
-  {
-    title: '“Fun Way to Learn and Earn”',
-    content:
-      'I referred some friends and got rewarded instantly. The referral program really works!',
-    name: 'Anab K.',
-    location: 'Lagos, Nigeria',
-    // avatar: 'https://i.pravatar.cc/48?img=3'
-    avatar: '/images/avatar-boy.png'
-
   }
 ]
 
 const cardRefs = ref<HTMLElement[]>([])
 const activeIndex = ref<number>(0)
 
+// const scrollToCard = (index: number) => {
+//   const card = cardRefs.value[index]
+//   if (card) {
+//     card.scrollIntoView({ behavior: 'smooth', inline: 'center' })
+//   }
+// }
+
+// const scrollToCard = (index: number) => {
+//   const card = cardRefs.value[index]
+//   if (card) {
+//     card.scrollIntoView({ behavior: 'smooth', inline: 'center' })
+//     activeIndex.value = index
+//   }
+// }
+
 const scrollToCard = (index: number) => {
+  const container = document.getElementById('testimonial-carousel')
   const card = cardRefs.value[index]
-  if (card) {
-    card.scrollIntoView({ behavior: 'smooth', inline: 'center' })
-  }
+
+  if (!container || !card) return
+
+  const containerWidth = container.offsetWidth
+  const cardWidth = card.offsetWidth
+  const cardOffset = card.offsetLeft
+
+  const scrollLeft = cardOffset - (containerWidth / 2) + (cardWidth / 2)
+
+  container.scrollTo({
+    left: scrollLeft,
+    behavior: 'smooth',
+  })
+
+  activeIndex.value = index
 }
+
+
 
 const isActive = (index: number) => activeIndex.value === index
 
@@ -86,10 +116,10 @@ onMounted(() => {
         :key="index"
         :ref="el => cardRefs[index] = el"
         @click="scrollToCard(index)"
-        class="snap-center flex-shrink-0 transition-all duration-300 cursor-pointer w-[80%] md:w-[500px] p-6 rounded-xl shadow-lg"
+        class="snap-center flex-shrink-0 transition-all duration-300 cursor-pointer w-[250px] md:w-[400px] p-6 rounded-xl shadow-lg"
         :class="isActive(index)
-          ? 'bg-[#01322f] text-white scale-100'
-          : 'bg-[#f3f3f3] text-black opacity-60 scale-95'"
+          ? 'bg-[#01322f] text-white scale-105 z-10'
+          : 'bg-[#f3f3f3] text-black opacity-60 scale-95 z-0'"
       >
         <div class="space-y-4">
           <p class="text-lg font-semibold text-emerald-300">

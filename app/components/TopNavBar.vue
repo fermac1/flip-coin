@@ -1,12 +1,16 @@
-<template>
-    <nav class="bg-[#f3f3f3] w-full px-4 md:px-6 py-4 space-y-2 flex md:flex-nowrap flex-wrap items-center justify-between text-[#ffffff] rounded-3xl">
+<template> 
+    <nav 
+     v-if="route.path === '/'"
+    class="backdrop-blur-[32.2969970703125px] backdrop-saturate-150 w-full px-4 md:px-6 py-4 space-y-2 flex md:flex-nowrap flex-wrap items-center justify-between text-[#ffffff]">
        <!-- Logo -->
         <div class="text-white font-bold text-2xl">
-           <p class="font-covered_by_your_grace font-normal text-[30px] text-[#191919]">Flipcoin</p>
+            <!-- <img src="~/assets/images/flipcoin_logo.png" alt="flip coin logo" class="md:w-[90%]"> -->
+            <p class="font-covered_by_your_grace font-normal text-[30px] text-[#ffffff]">Flipcoin</p>
         </div>
 
-         <!-- Mobile Menu Toggle Button -->
-        <button class="md:hidden text-[#052225] focus:outline-none" @click="isMenuOpen = !isMenuOpen">
+    
+                 <!-- Mobile Menu Toggle Button -->
+        <button class="md:hidden text-[#ffffff] focus:outline-none" @click="isMenuOpen = !isMenuOpen">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M4 6h16M4 12h16M4 18h16" />
@@ -35,6 +39,54 @@
             {{ item.label }}
         </NuxtLink> -->
 
+         <NuxtLink
+            v-for="item in navItems"
+            :key="item.route"
+            :to="item.route"
+            class="px-4 py-1.5 rounded-lg text-[14px] font-normal transition-all duration-200"
+            exact-active-class="bg-[#052225] text-[#fcfcfc]" 
+            active-class="bg-[#052225] text-[#fcfcfc]"
+             @click="isMenuOpen = false"
+        >
+            {{ item.label }}
+        </NuxtLink>
+        </div>
+
+
+        <!-- Get Started Button -->
+        <button class="px-5 py-2 rounded-[10px] border border-[#5BC485] text-[#ffffff] transition text-[14px] font-bold font-craftwork"
+        style="box-shadow: inset 0 1px 1px 0 #5BC485;"
+            onmouseover="this.style.boxShadow='0 4px 6px #5BC485'"
+            onmouseout="this.style.boxShadow='inset 0 0 1px 1px #5BC485'">
+         Get started
+        </button>
+    </nav>
+
+    <!-- if not home -->
+     <nav 
+     v-else
+     class="bg-[#f3f3f3] w-full px-4 md:px-6 py-4 space-y-2 flex md:flex-nowrap flex-wrap items-center justify-between text-[#ffffff] rounded-3xl">
+       <!-- Logo -->
+        <div class="text-white font-bold text-2xl">
+           <p class="font-covered_by_your_grace font-normal text-[30px] text-[#191919]">Flipcoin</p>
+        </div>
+
+         <!-- Mobile Menu Toggle Button -->
+        <button class="md:hidden text-[#052225] focus:outline-none" @click="isMenuOpen = !isMenuOpen">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        </button>
+
+      <!-- Navigation Tabs -->
+        <div
+        class="flex-col md:flex md:flex-row gap-1 bg-[#ffffff] text-[#052225] rounded-lg p-1 md:p-1"
+        :class="[
+            isMenuOpen ? 'flex w-full mt-4' : 'hidden',
+            'md:flex md:items-center md:mt-0 md:w-auto'
+        ]"
+        >
         <NuxtLink
             v-for="item in navItems"
             :key="item.route"
@@ -44,6 +96,7 @@
             active-class="bg-[#052225] text-[#fcfcfc]"
              @click="isMenuOpen = false"
         >
+
             {{ item.label }}
         </NuxtLink>
         </div>
@@ -59,12 +112,16 @@
 </template>
 
 <script lang="ts" setup>
-    import { ref } from 'vue'
+import { ref } from 'vue'
+import { useRoute } from 'vue-router'
+const route = useRoute()
+
+// const navItems = ['Home', 'About', 'FAQs']
     const navItems = [
-        { label: 'Home', route: '/' },
-        { label: 'About', route: '/about' },
-        { label: 'FAQs', route: '/faq' }
-    ]
+  { label: 'Home', route: '/' },
+  { label: 'About', route: '/about' },
+  { label: 'FAQs', route: '/faq' }
+]
 const activeTab = ref('Home')
     const isMenuOpen = ref(false)
 </script>

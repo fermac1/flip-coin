@@ -5,7 +5,7 @@
       key="carousel"
     >
       <div class="md:w-[50%]">
-        <img :src="currentStep?.image" :alt="`Step ${currentStepIndex + 1}`" class="w-[100%]" />
+        <NuxtImg :src="currentStep?.image" :alt="`Step ${currentStepIndex + 1}`" class="w-[100%]" />
       </div>
       <div class="text-left p-4 md:w-[50%]">
         <p class="font-covered_by_your_grace font-normal text-[40px] text-[#191919]">{{ currentStep?.title }}</p>
@@ -52,7 +52,8 @@ import { ref, computed } from 'vue'
 // Carousel data
 const steps = [
   {
-    image: new URL('~/assets/images/step1.png', import.meta.url).href,
+    // image: new URL('~/assets/images/step1.png', import.meta.url).href,
+    image: '/images/step1.png',
     title: "STEP 1",
     heading: "SIGN UP TO CREATE AN ACCOUNT",
     subheading: "This is where we get to know you-just a little",
@@ -64,7 +65,7 @@ const steps = [
     ]
   },
   {
-    image: new URL('~/assets/images/step2.png', import.meta.url).href,
+    image: '/images/step2.png',
       title: "STEP 2",
       heading: "VERIFY YOUR EMAIL ADDRESS",
       subheading: "To keep your account secure and unlock full access, please verify your email address.",
@@ -75,7 +76,7 @@ const steps = [
     ]
   },
   {
-    image: new URL('~/assets/images/step3.png', import.meta.url).href,
+    image: '/images/step3.png',
       title: "STEP 3",
       heading: "SETUP YOUR FLIPCOIN WALLET",
       subheading: "Once you're in, your wallet is automatically created—no technical setup required.",
@@ -86,7 +87,7 @@ const steps = [
     ]
     },
   {
-    image: new URL('~/assets/images/step4.png', import.meta.url).href,
+    image: '/images/step4.png',
       title: "STEP 4",
       heading: "START FLIPPING ON FLIPCOIN",
       subheading: "Log In to Your FlipCoin Dashboard",

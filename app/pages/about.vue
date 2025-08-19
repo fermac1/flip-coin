@@ -7,7 +7,7 @@
     
             <div class="z-10 relative text-[#161616] mt-[50px] md:mt-[120px] mb-[50px] p-4 md:p-8" id="who-we-serve">
                 <div class="text-center">
-                    <p class="font-craftwork md:text-[64px] font-semibold">Who we serve</p>
+                    <p class="font-craftwork text-[32px] md:text-[64px] font-semibold">Who we serve</p>
                     <p class="font-instrument text-[16px] md:text-[20px] font-light">FlipCoin is built for anyone looking to start or simplify their crypto journey 
                         no prior experience required.
                     </p>
@@ -74,7 +74,7 @@
                 </section>
 
                 <div class="text-left md:w-[70%] mt-[30px] mb-[30px] md:mt-[50px] md:mb-[50px]">
-                    <p class="font-covered_by_your_grace font-light text-[22px] md:text-[58px]">Make digital currency simple, fun, and rewarding.</p>
+                    <p class="font-covered_by_your_grace font-light text-[32px] md:text-[58px]">Make digital currency simple, fun, and rewarding.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#F0F1F4] p-4 md:p-6 font-instrument rounded-2xl">
