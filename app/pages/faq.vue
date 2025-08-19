@@ -6,7 +6,7 @@
         </div>
     
             <div class="mt-[50px] md:mt-[120px] mb-[50px]">
-                <div class="text-center text-[#161616] w-[350px] md:w-[700px] md:mx-auto">
+                <div class="text-center text-[#161616] w-[350px] md:w-[700px] mx-auto">
                     <p class="font-craftwork font-extrabold text-[32px] md:text-[64px]">FAQs</p>
                     <p class="font-instrument text-[16px] md:text-[20px] font-light">Flipcoin is a gamified, beginner-friendly crypto platform.</p> 
                     <p class="font-instrument text-[16px] md:text-[20px] font-light">It's secure, transparent, and perfect for quick, low-stakes trading.</p>

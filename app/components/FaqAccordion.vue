@@ -35,7 +35,7 @@
       <!-- FAQ Answer -->
       <div
         v-if="openIndex === index"
-        class="px-4 pb-4 text-[19px] bg-green-50 text-[#191919] font-light"
+        class="px-4 pb-4 text-[19px] text-[#191919] font-light"
       >
         {{ faq.answer }}
       </div>
