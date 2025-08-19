@@ -118,17 +118,24 @@ onMounted(() => {
         @click="scrollToCard(index)"
         class="snap-center flex-shrink-0 transition-all duration-300 cursor-pointer w-[250px] md:w-[400px] p-6 rounded-xl shadow-lg"
         :class="isActive(index)
-          ? 'bg-[#01322f] text-white scale-105 z-10'
+          ? 'bg-[#01322f] text-white scale-105 z-10 '
           : 'bg-[#f3f3f3] text-black opacity-60 scale-95 z-0'"
       >
         <div class="space-y-4">
           <p class="text-lg font-semibold text-emerald-300">
             {{ testimonial.title }}
           </p>
-          <p class="text-sm">
+          <p class="text-sm" :class="isActive(index) ? 'pb-10' : 'pb-2'">
             {{ testimonial.content }}
           </p>
-          <div class="flex items-center gap-3 pt-4">
+
+          <!-- Gradient line only shown for active card -->
+          <div
+            v-if="isActive(index)"
+            class="w-4/5 mx-auto h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent"
+          ></div>
+
+          <div class="flex items-center gap-3 pt-4" :class="isActive(index) ? 'pt-10 pb-6' : 'pt-2'">
             <img :src="testimonial.avatar" class="w-10 h-10 rounded-full" />
             <div class="text-sm leading-tight">
               <p class="font-semibold">{{ testimonial.name }}</p>
