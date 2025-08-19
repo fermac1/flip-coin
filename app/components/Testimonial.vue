@@ -116,10 +116,10 @@ onMounted(() => {
         :key="index"
         :ref="el => cardRefs[index] = el"
         @click="scrollToCard(index)"
-        class="snap-center flex-shrink-0 transition-all duration-300 cursor-pointer w-[250px] md:w-[400px] p-6 rounded-xl shadow-lg"
+        class="snap-center flex-shrink-0 transition-all duration-300 cursor-pointer w-[250px] md:w-[400px] rounded-xl p-8 shadow-lg"
         :class="isActive(index)
-          ? 'bg-[#01322f] text-white scale-105 z-10 '
-          : 'bg-[#f3f3f3] text-black opacity-60 scale-95 z-0'"
+          ? 'bg-[#01322f] text-white scale-110 z-10'
+          : 'bg-[#f3f3f3] text-black opacity-60 scale-90 z-0'"
       >
         <div class="space-y-4">
           <p class="text-lg font-semibold text-emerald-300">
