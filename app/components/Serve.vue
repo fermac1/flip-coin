@@ -78,8 +78,7 @@
         class="absolute bottom-0 right-0 w-40 md:w-56 opacity-90 pointer-events-none" />
 
         <!-- Optional background pattern -->
-        <div class="absolute inset-0 bg-[url('/images/about-pattern.png')] bg-no-repeat md:bg-left-top pointer-events-none"
-        style="background-size: 50% auto;">
+        <div class="absolute inset-0 bg-[url('/images/about-pattern.png')] bg-no-repeat bg-[length:100%_auto] md:bg-[length:50%_auto]  md:bg-left-top pointer-events-none">
         </div>
 
     </section>
