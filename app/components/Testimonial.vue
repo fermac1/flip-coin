@@ -118,17 +118,35 @@ onMounted(() => {
         @click="scrollToCard(index)"
         class="snap-center flex-shrink-0 transition-all duration-300 cursor-pointer w-[250px] md:w-[400px] p-6 rounded-xl shadow-lg"
         :class="isActive(index)
-          ? 'bg-[#01322f] text-white scale-105 z-10'
-          : 'bg-[#f3f3f3] text-black opacity-60 scale-95 z-0'"
+          ? 'bg-[#01322f] text-white scale-105'
+          : 'bg-[#f3f3f3] text-black opacity-60 scale-95'"
+       
       >
-        <div class="space-y-4">
+     <!-- Background pattern -->
+      <div v-if="isActive(index)"
+        class="absolute inset-0 bg-no-repeat bg-left-top pointer-events-none transition-opacity duration-300 z-0"
+        style="background-image: url('/images/testimonial-pattern.png'); background-size: 100% auto;"
+      ></div>
+
+      <!-- Dark overlay on top -->
+      <!-- <div
+        v-if="isActive(index)"
+        class="absolute inset-0 z-10 pointer-events-none bg-[#01322f] opacity-90 mix-blend-multiply"
+      ></div> -->
+
+
+        <div class="space-y-4 relative z-10">
           <p class="text-lg font-semibold text-emerald-300">
             {{ testimonial.title }}
           </p>
-          <p class="text-sm">
+          <p class="text-sm" :class="isActive(index) ? 'pb-10' : 'pb-0'">
             {{ testimonial.content }}
           </p>
-          <div class="flex items-center gap-3 pt-4">
+
+          <!-- Gradient Horizontal Line -->
+        <div v-if="isActive(index)" class="w-4/5 mx-auto h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent mt-20 mb-12"></div>
+
+          <div class="flex items-center gap-3 pt-4" :class="isActive(index) ? 'py-10' : 'py-0'">
             <img :src="testimonial.avatar" class="w-10 h-10 rounded-full" />
             <div class="text-sm leading-tight">
               <p class="font-semibold">{{ testimonial.name }}</p>

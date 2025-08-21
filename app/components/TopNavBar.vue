@@ -44,8 +44,9 @@
             :key="item.route"
             :to="item.route"
             class="px-4 py-1.5 rounded-lg text-[14px] font-normal transition-all duration-200"
-            exact-active-class="bg-[#052225] text-[#fcfcfc]" 
-            active-class="bg-[#052225] text-[#fcfcfc]"
+             :class="{
+            'bg-[#052225] text-[#fcfcfc]': route.path === item.route
+            }"
              @click="isMenuOpen = false"
         >
             {{ item.label }}
@@ -92,8 +93,10 @@
             :key="item.route"
             :to="item.route"
             class="px-4 py-1.5 rounded-lg text-[14px] font-normal transition-all duration-200"
-            exact-active-class="bg-[#052225] text-[#fcfcfc]" 
-            active-class="bg-[#052225] text-[#fcfcfc]"
+            
+            :class="{
+            'bg-[#052225] text-[#fcfcfc]': route.path === item.route
+            }"
              @click="isMenuOpen = false"
         >
 

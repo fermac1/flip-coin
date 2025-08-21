@@ -8,35 +8,35 @@
             </div>
 
             <!-- Navigation Sections -->
-            <div class="flex flex-grow justify-between gap-10">
-            <!-- Column 1 -->
-            <div class="space-y-2">
-                <p class="font-bold text-[16px]"><NuxtLink to="/">Home</NuxtLink></p>
-                <p class="text-[14px] font-light"><NuxtLink to="/#how-it-works">How it works</NuxtLink></p>
-                <p class="text-[14px] font-light"><NuxtLink to="/#testimonials">Testimonials</NuxtLink></p>
-            </div>
-
-            <!-- Column 2 -->
-            <div class="space-y-2">
-                <p class="font-bold text-[16px]"><NuxtLink to="/about">About</NuxtLink></p>
-                <p class="text-[14px] font-light"><NuxtLink to="/about/#who-we-serve">Who we serve</NuxtLink></p>
-            </div>
-
-            <!-- Column 3 -->
-            <div class="space-y-2">
-                <p class="font-bold text-[16px]"><NuxtLink to="/faq">FAQs</NuxtLink></p>
-            </div>
-
-            <!-- Column 4: Socials -->
-            <div class="space-y-2">
-                <p class="font-bold mb-2 text-[16px]">Follow us on</p>
-                <div class="flex gap-2 flex-wrap md:flex-nowrap">
-                <NuxtLink to="#"><img src="~/assets/images/facebook.png" alt="facebook" /></NuxtLink>
-                <NuxtLink to="#"><img src="~/assets/images/x.png" alt="x" /></NuxtLink>
-                <NuxtLink to="#"><img src="~/assets/images/instagram.png" alt="instagram" /></NuxtLink>
-                <NuxtLink to="#"><img src="~/assets/images/github.png" alt="github" /></NuxtLink>
+            <div class="flex flex-grow md:flex-nowrap flex-wrap justify-between gap-10">
+                <!-- Column 1 -->
+                <div class="space-y-2">
+                    <p class="font-bold text-[16px]"><NuxtLink to="/">Home</NuxtLink></p>
+                    <p class="text-[14px] font-light"><NuxtLink to="/#how-it-works">How it works</NuxtLink></p>
+                    <p class="text-[14px] font-light"><NuxtLink to="/#testimonials">Testimonials</NuxtLink></p>
                 </div>
-            </div>
+
+                <!-- Column 2 -->
+                <div class="space-y-2">
+                    <p class="font-bold text-[16px]"><NuxtLink to="/about">About</NuxtLink></p>
+                    <p class="text-[14px] font-light"><NuxtLink to="/about/#who-we-serve">Who we serve</NuxtLink></p>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="space-y-2">
+                    <p class="font-bold text-[16px]"><NuxtLink to="/faq">FAQs</NuxtLink></p>
+                </div>
+
+                <!-- Column 4: Socials -->
+                <div class="space-y-2">
+                    <p class="font-bold mb-2 text-[16px]">Follow us on</p>
+                    <div class="flex gap-2 flex-wrap md:flex-nowrap">
+                    <NuxtLink to="#"><img src="~/assets/images/facebook.png" alt="facebook" /></NuxtLink>
+                    <NuxtLink to="#"><img src="~/assets/images/x.png" alt="x" /></NuxtLink>
+                    <NuxtLink to="#"><img src="~/assets/images/instagram.png" alt="instagram" /></NuxtLink>
+                    <NuxtLink to="#"><img src="~/assets/images/github.png" alt="github" /></NuxtLink>
+                    </div>
+                </div>
             </div>
         </div>
 
