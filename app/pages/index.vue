@@ -1,5 +1,5 @@
 <template>
-    <div class="md:min-h-screen bg-[#022629] text-white px-8 md:px-20 md:pt-10 pt-4 pb-0 relative bg-cover bg-no-repeat md:bg-left-top bg-[url(/images/bg-vector.png)]"
+    <div class="md:min-h-screen bg-[#022629] text-white px-6 md:px-20 md:pt-10 pt-4 pb-0 relative bg-cover bg-no-repeat md:bg-left-top bg-[url(/images/bg-vector.png)]"
         style="background-size: 50% 50%; background-position: top left;">
         <div class="absolute inset-0 bg-[#022629] bg-opacity-70"></div>
         <div class="z-10 relative">
