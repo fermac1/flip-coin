@@ -110,7 +110,12 @@
         </div>
 
         <!-- Get Started Button -->
-        <button class="px-5 py-2 rounded-lg border border-[#022629] text-[#191919] transition text-[14px] font-bold font-craftwork"
+        <button 
+         :class="[
+            isMenuOpen ? 'flex w-full mt-4' : 'hidden',
+            'md:flex md:items-center md:mt-0 md:w-auto'
+        ]"
+        class="px-5 py-2 rounded-lg border border-[#022629] text-[#191919] transition text-[14px] font-bold font-craftwork"
         style="box-shadow: inset 0 1px 1px 0 #022629;"
             onmouseover="this.style.boxShadow='0 4px 6px #022629'"
             onmouseout="this.style.boxShadow='inset 0 0 1px 1px #022629'">
